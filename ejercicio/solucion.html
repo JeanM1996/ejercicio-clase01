@@ -1,0 +1,58 @@
+<html>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+
+
+        <h2>Modelo PIM </h2>
+        <img src="../imgs/Diagrama1.jpeg" alt="PIM model">
+
+        <h2>Modelo PSM </h2>
+        <div class="mermaid">
+          classDiagram
+    class Equipo
+    Equipo : +String nombre
+    Equipo : +String tipoDeporte
+    Equipo : +siglas
+    Equipo : List~Jugador~ jugadores
+    Equipo : +getNombre()
+    Equipo : +getTipoDeporte()
+    Equipo : +getSiglas()
+    Equipo : +setNombre()
+    Equipo : +setTipoDeporte()
+    Equipo : +setSiglas()
+    Equipo : +addJugador(Jugador)
+
+    class Jugador
+    Jugador : +String nombre
+    Jugador : +String apellido
+    Jugador : +String posicion    
+    Jugador : List~Sancion~ sanciones
+    Jugador : +getNombre()
+    Jugador : +getApellido()
+    Jugador : +getPosicion()
+    Jugador : +setNombre()
+    Jugador : +setApellido()
+    Jugador : +setPosicion()
+    Jugador: +addSancion(Sancion)
+
+
+
+
+    class Sancion
+    Sancion : +String observacion
+    Sancion : +double multa
+    Sancion : +getObservacion()
+    Sancion : +getMulta()
+    Sancion : +setObservacion()
+    Sancion : +setMulta()
+    
+    
+    Equipo "1" o-- "0..*" Jugador
+    Jugador "1" o-- "0..*" Sancion
+
+        </div>
+    </body>
+</html>
