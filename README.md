@@ -13,3 +13,10 @@ Se presenta el siguiente escenario, donde se simula la creación de un modelo PI
 * Revisar la documentación
 * Revisar el ejemplo de la carpeta **example**
 * Crear un archivo llamado **solucion.html** en la carpeta **ejercicio**. Dentro del archivo presentar el modelo resultante.
+
+
+### Deployed in
+* jeanmosquera.me/ejercicio-clase01
+
+### Author
+* Jean Mosquera
